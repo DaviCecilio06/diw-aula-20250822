@@ -9,16 +9,32 @@
             font-size: 16px;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        html{
+            /*border: .2rem solid aqua;*/
+            padding: 0rem;
+
+        }
+        body{
+            /*border: .2rem solid green;*/
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
         header {
             display: flex;
-            border: .2rem  solid red;
+            /* border: .2rem  solid red; */
             background-color: rgb(51, 46, 46);
             padding: .6rem;
             align-items: center;
         }
 
         #logo {
-            border: .2rem solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            border: .2rem solid rgb(220, 220, 253);
             border-radius: 100%;
             width: 3rem;
             height: 3rem;
@@ -27,12 +43,49 @@
             margin-right: 1rem;
             background-color: blue;
             color: rgb(233, 232, 232);
+            
         }
 
         #titulo {
             font-size: 2rem;
             font-weight: bold;
             color: rgb(233, 232, 232);
+        }
+        section{
+            display: flex;
+            /* border: 0.2rem solid purple; */
+            flex: 1;
+        }
+
+        nav{
+            /* border: .2rem solid plum; */
+            width: 15rem;
+            background-color: rgb(194, 194, 194);
+        }
+
+        main{
+            /* border: .2rem solid rgb(60, 255, 0); */
+            flex: 1;
+            padding: 1rem;
+        }
+
+        .cartao{
+            border: .2rem solid red;
+            width: 15rem;
+            padding: .7rem;
+            box-shadow: .5rem .5rem .3rem .01rem gray
+        }
+
+        .produto{
+          width: 13rem;
+
+        }
+        footer{
+            /* border: 0.2rem solid yellow; */
+            background-color: black;
+            padding: 3rem;
+            color: aliceblue;
+
         }
     </style>
 </head>
@@ -41,5 +94,15 @@
         <div id="logo">D</div>
         <h1 id="titulo">Meu Site</h1>
     </header>
+    <section>
+        <nav></nav>
+        <main>
+            <div class="cartao">
+                <img clas="produto"src="image.png" alt="meu site">
+                Meu cartao
+            </div>
+        </main>
+    </section>
+    <footer>Meu site</footer>
 </body>
 </html>
